@@ -1,0 +1,6 @@
+{
+  "namespace": "mbts",
+  "icon": "img/icon.png",
+  "setup": "setup.mjs",
+  "load": ["templates.min.html"]
+}
