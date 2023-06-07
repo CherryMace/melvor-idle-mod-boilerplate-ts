@@ -17,6 +17,16 @@ Requires [Node.js](https://nodejs.org/en/)
    1. Run `npm run buildzip`
    2. Upload the generated `.zip` file in the `package` folder.
 
+# Features
+
+## Included Melvor Idle Typing
+The official Melvor Idle Typing project definitions are included as part of this repository. You should have access to types/autocomplete with things like the modding context API or `game` objects.
+
+## HTML Templates
+This repository automatically minifies and loads any HTML templates that are stored with a filename like `*.template.html`. This allows for better separation of templates in the source files but reduces package size and speeds up load times.
+* If you utilize this pattern you should not add any of your individual `*.template.html` files to the `"load"` property of the `manifest.json` file.
+* If you do not use any template files, remove the `templates.min.html` file from the `"load"` property of the `manifest.json` file.
+
 # Important Notes/Caveats/Known Issues
 * There are some oddities/type errors when referencing globally available 3rd party libraries like Swal ¯\\\_(ツ)\_/¯
 * Don't use `loadModule` to import modules. Use ES6 `import` instead.
